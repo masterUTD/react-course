@@ -18,10 +18,10 @@ import { checkUserSessions } from './redux/user/user.actions'
 
 
 const App  = ({ checkUserSessions, currentUser }) => {
-  useEffect(() => {
+  useEffect(() => {  // useEffect resemble componentDidMount , and others life cycle methods
     checkUserSessions()
 
-  }, [checkUserSessions]) // useEffect resemble componentDidMount , and others life cycle methods
+  }, [checkUserSessions]) 
 
     return (
       <div >
